@@ -1,7 +1,6 @@
 package com.example.demo.Infraestrutura.Repositorios;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -25,5 +24,10 @@ public class OrcamentoRepositorio implements IOrcamento{
     @Override
     public Orcamento findOrcamento(int id) {
         return this.io.findById(id).get();
+    }
+
+    @Override
+    public Orcamento saveOrcamento(Orcamento o) {
+        return this.io.save(o);
     }   
 }

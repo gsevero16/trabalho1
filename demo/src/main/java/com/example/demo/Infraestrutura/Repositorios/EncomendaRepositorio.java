@@ -26,4 +26,9 @@ public class EncomendaRepositorio implements IEncomenda {
     public Encomenda findEncomenda(int id_encomenda) {
         return this.er.findById(id_encomenda).get();
     }
+
+    @Override
+    public Encomenda saveEncomenda(Encomenda e) {
+        return this.er.save(e);
+    }
 }
