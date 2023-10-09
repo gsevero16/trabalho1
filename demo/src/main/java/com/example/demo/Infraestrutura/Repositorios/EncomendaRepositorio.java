@@ -23,7 +23,7 @@ public class EncomendaRepositorio implements IEncomenda {
     }
 
     @Override
-    public Optional<Encomenda> findEncomenda(int id_encomenda) {
-        return this.er.findById(id_encomenda);
+    public Encomenda findEncomenda(int id_encomenda) {
+        return this.er.findById(id_encomenda).get();
     }
 }

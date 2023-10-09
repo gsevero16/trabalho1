@@ -7,5 +7,5 @@ import java.util.Optional;
 
 public interface IOrcamento {
     List<Orcamento> findAll();
-    Optional<Orcamento> findOrcamento(int id);
+    Orcamento findOrcamento(int id);
 }

@@ -23,7 +23,7 @@ public class OrcamentoRepositorio implements IOrcamento{
     }
 
     @Override
-    public Optional<Orcamento> findOrcamento(int id) {
-        return this.io.findById(id);
+    public Orcamento findOrcamento(int id) {
+        return this.io.findById(id).get();
     }   
 }
