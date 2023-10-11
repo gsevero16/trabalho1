@@ -1,5 +1,5 @@
 package com.example.demo.Apresentação;
 
-public class Controller {
+public class OrcamentoController {
     
 }
