@@ -1,9 +1,11 @@
-package com.example.demo.Dominio.Serviços;
+package com.example.demo.Aplicação.Serviços;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import com.example.demo.Aplicação.DTO.EncomendaDTO;
+import com.example.demo.Aplicação.DTO.OrcamentoDTO;
 import com.example.demo.Dominio.Entidades.*;
 import com.example.demo.Infraestrutura.Interfaces.IEncomendaRepositorio;
 import com.example.demo.Infraestrutura.Interfaces.IOrcamentoRepositorio;
@@ -18,7 +20,7 @@ public class OrcamentoService {
         this.io = io;
     }
 
-    public List<Orcamento> calculaOrcamento(){
+    public Orcamento calculaOrcamento(OrcamentoDTO oDto){
         return null;
     }
 

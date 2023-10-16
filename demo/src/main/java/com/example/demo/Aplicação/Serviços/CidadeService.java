@@ -1,4 +1,4 @@
-package com.example.demo.Dominio.Serviços;
+package com.example.demo.Aplicação.Serviços;
 
 public class CidadeService {
 
